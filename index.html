@@ -146,41 +146,138 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-brand-card/50">
+   <section id="projects" class="py-20 bg-brand-card/50">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl font-bold text-white mb-12 border-l-4 border-brand-accent pl-4">Featured Projects</h2>
-            <div class="grid md:grid-cols-2 gap-8">
+            <h2 class="text-3xl font-bold text-white mb-4 border-l-4 border-brand-accent pl-4">Featured Projects</h2>
+            <p class="text-slate-400 mb-12 max-w-2xl">
+                A selection of my primary projects covering Machine Learning, Computer Vision, Natural Language Processing, and Full-Stack Web Development.
+            </p>
 
-                <!-- Project 1 -->
-                <div class="bg-brand-card rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition">
+            <!-- Grid layout for project cards -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Project 1: AI Based Fake News Detection -->
+                <div class="bg-brand-card rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition flex flex-col justify-between hover:-translate-y-1 duration-300">
+                    <!-- <img src="images/fake-news.jpg" alt="Fake News Detection" class="w-full h-48 object-cover"> -->
                     <div class="p-6 space-y-4">
-                        <h3 class="text-xl font-bold text-white">Machine Learning Clustering Tool</h3>
+                        <div class="flex justify-between items-start gap-2">
+                            <h3 class="text-xl font-bold text-white">AI-Based Fake News Detection</h3>
+                            <span class="text-xs bg-brand-accent/10 text-brand-accent px-2 py-1 rounded font-mono shrink-0">NLP / ML</span>
+                        </div>
                         <p class="text-slate-400 text-sm leading-relaxed">
-                            An end-to-end implementation comparing DBSCAN and density-based clustering models for complex datasets with visualization metrics.
+                            An NLP-powered system designed to analyze online news articles and predict whether content is real or fake using Machine Learning classification models.
                         </p>
-                        <div class="flex flex-wrap gap-2 text-xs text-brand-accent font-mono">
-                            <span>#Python</span> <span>#Scikit-Learn</span> <span>#DataAnalysis</span>
+                        <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+                            <li>Preprocessed text using NLTK (Stopwords, Stemming/Lemmatization).</li>
+                            <li>Extracted features using TF-IDF Vectorization.</li>
+                            <li>Trained and compared PassiveAggressive & Naive Bayes classifiers.</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 text-xs text-brand-accent font-mono pt-2">
+                            <span>#Python</span> <span>#NLP</span> <span>#Scikit-Learn</span> <span>#NLTK</span>
                         </div>
-                        <div class="pt-2 flex gap-4 text-sm">
-                            <a href="#" class="text-slate-300 hover:text-brand-accent transition"><i class="fa-brands fa-github mr-1"></i> Code</a>
-                            <a href="#" class="text-slate-300 hover:text-brand-accent transition"><i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Demo</a>
-                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex gap-4 text-sm border-t border-slate-800/50 mt-4">
+                        <a href="https://github.com/yourusername/fake-news-detection" target="_blank" class="text-slate-300 hover:text-brand-accent transition flex items-center gap-1.5 mt-3"><i class="fa-brands fa-github"></i> Source Code</a>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="bg-brand-card rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition">
+                <!-- Project 2: Credit Card Fraud Detection -->
+                <div class="bg-brand-card rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition flex flex-col justify-between hover:-translate-y-1 duration-300">
+                    <!-- <img src="images/credit-card.jpg" alt="Credit Card Fraud Detection" class="w-full h-48 object-cover"> -->
                     <div class="p-6 space-y-4">
-                        <h3 class="text-xl font-bold text-white">CPU Scheduling Simulator</h3>
+                        <div class="flex justify-between items-start gap-2">
+                            <h3 class="text-xl font-bold text-white">Credit Card Fraud Detection</h3>
+                            <span class="text-xs bg-brand-accent/10 text-brand-accent px-2 py-1 rounded font-mono shrink-0">Data Science</span>
+                        </div>
                         <p class="text-slate-400 text-sm leading-relaxed">
-                            Interactive visualizer for operating system process scheduling algorithms, including SRTF, Round Robin, and Priority Scheduling.
+                            A machine learning model that detects fraudulent credit card transactions in real-time, effectively handling extreme class imbalance.
                         </p>
-                        <div class="flex flex-wrap gap-2 text-xs text-brand-accent font-mono">
-                            <span>#C++</span> <span>#Algorithms</span> <span>#OperatingSystems</span>
+                        <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+                            <li>Handled class imbalance using SMOTE and Random Under-sampling.</li>
+                            <li>Built and evaluated models using Random Forest & Isolation Forest.</li>
+                            <li>Measured performance using Precision, Recall, and ROC-AUC curves.</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 text-xs text-brand-accent font-mono pt-2">
+                            <span>#Python</span> <span>#Pandas</span> <span>#Imbalanced-Learn</span> <span>#Seaborn</span>
                         </div>
-                        <div class="pt-2 flex gap-4 text-sm">
-                            <a href="#" class="text-slate-300 hover:text-brand-accent transition"><i class="fa-brands fa-github mr-1"></i> Code</a>
+                    </div>
+                    <div class="p-6 pt-0 flex gap-4 text-sm border-t border-slate-800/50 mt-4">
+                        <a href="https://github.com/yourusername/credit-card-fraud" target="_blank" class="text-slate-300 hover:text-brand-accent transition flex items-center gap-1.5 mt-3"><i class="fa-brands fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Plant Disease Detection -->
+                <div class="bg-brand-card rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition flex flex-col justify-between hover:-translate-y-1 duration-300">
+                    <!-- <img src="images/plant-disease.jpg" alt="Plant Disease Detection" class="w-full h-48 object-cover"> -->
+                    <div class="p-6 space-y-4">
+                        <div class="flex justify-between items-start gap-2">
+                            <h3 class="text-xl font-bold text-white">Plant Disease Detection</h3>
+                            <span class="text-xs bg-brand-accent/10 text-brand-accent px-2 py-1 rounded font-mono shrink-0">Deep Learning</span>
                         </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            A Deep Learning Computer Vision model that identifies plant leaf diseases from digital images to assist in automated agricultural disease diagnosis.
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+                            <li>Built a CNN architecture trained on the PlantVillage dataset.</li>
+                            <li>Implemented Image Augmentation (Rotation, Zoom, Flip).</li>
+                            <li>High classification accuracy across multiple crop categories.</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 text-xs text-brand-accent font-mono pt-2">
+                            <span>#Python</span> <span>#TensorFlow</span> <span>#CNN</span> <span>#OpenCV</span>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex gap-4 text-sm border-t border-slate-800/50 mt-4">
+                        <a href="https://github.com/yourusername/plant-disease-detection" target="_blank" class="text-slate-300 hover:text-brand-accent transition flex items-center gap-1.5 mt-3"><i class="fa-brands fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+
+                <!-- Project 4: Real Estate Management System -->
+                <div class="bg-brand-card rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition flex flex-col justify-between hover:-translate-y-1 duration-300">
+                    <!-- <img src="images/real-estate.jpg" alt="Real Estate Management" class="w-full h-48 object-cover"> -->
+                    <div class="p-6 space-y-4">
+                        <div class="flex justify-between items-start gap-2">
+                            <h3 class="text-xl font-bold text-white">Real Estate Management System</h3>
+                            <span class="text-xs bg-brand-accent/10 text-brand-accent px-2 py-1 rounded font-mono shrink-0">Web App</span>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            A full-stack web application for managing real estate listings, client viewings, property searching, and landlord-tenant communication.
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+                            <li>Property search and filtering by location, price, and type.</li>
+                            <li>Dynamic CRUD operations for managing properties.</li>
+                            <li>User authentication and role-based access control.</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 text-xs text-brand-accent font-mono pt-2">
+                            <span>#JavaScript</span> <span>#HTML5/CSS3</span> <span>#WebDev</span> <span>#SQL</span>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex gap-4 text-sm border-t border-slate-800/50 mt-4">
+                        <a href="https://github.com/yourusername/real-estate-system" target="_blank" class="text-slate-300 hover:text-brand-accent transition flex items-center gap-1.5 mt-3"><i class="fa-brands fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+
+                <!-- Project 5: Bus Ticket Booking System -->
+                <div class="bg-brand-card rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition flex flex-col justify-between hover:-translate-y-1 duration-300">
+                    <!-- <img src="images/bus-booking.jpg" alt="Bus Ticket Booking" class="w-full h-48 object-cover"> -->
+                    <div class="p-6 space-y-4">
+                        <div class="flex justify-between items-start gap-2">
+                            <h3 class="text-xl font-bold text-white">Bus Ticket Booking System</h3>
+                            <span class="text-xs bg-brand-accent/10 text-brand-accent px-2 py-1 rounded font-mono shrink-0">Full-Stack</span>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            An automated web application allowing users to search bus schedules, visually select seats, and book tickets online.
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+                            <li>Interactive graphical seat layout for reservation.</li>
+                            <li>Route schedule management & automated confirmations.</li>
+                            <li>Admin portal to manage buses, routes, and logs.</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 text-xs text-brand-accent font-mono pt-2">
+                            <span>#JavaScript</span> <span>#TailwindCSS</span> <span>#SQL</span> <span>#UI_UX</span>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex gap-4 text-sm border-t border-slate-800/50 mt-4">
+                        <a href="https://github.com/yourusername/bus-ticket-booking" target="_blank" class="text-slate-300 hover:text-brand-accent transition flex items-center gap-1.5 mt-3"><i class="fa-brands fa-github"></i> Source Code</a>
                     </div>
                 </div>
 
